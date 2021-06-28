@@ -96,7 +96,7 @@ def create_lfahda_mfc(packer, enabled, hda_set_speed=0):
 def create_mdps12(packer, frame, mdps12):
   values = copy.copy(mdps12)
   values["CF_Mdps_ToiActive"] = 0
-  values["CF_Mdps_ToiUnavail"] = 2
+  values["CF_Mdps_ToiUnavail"] = 1
   values["CF_Mdps_MsgCount2"] = frame % 0x100
   values["CF_Mdps_Chksum2"] = 0
 
