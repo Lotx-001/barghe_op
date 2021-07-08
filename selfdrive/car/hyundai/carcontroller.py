@@ -25,7 +25,7 @@ class CarControllerParams:
   ACCEL_SCALE = max(ACCEL_MAX, -ACCEL_MIN)
   # SPAS steering limits
   STEER_ANG_MAX = 360  # SPAS Max Angle
-  STEER_ANG_MAX_RATE = 180 # SPAS Degrees per ms
+  STEER_ANG_MAX_RATE = 360 # SPAS Degrees per ms
 
 # Steer torque limits
 class SteerLimitParams:
