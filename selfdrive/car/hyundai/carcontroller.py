@@ -29,9 +29,9 @@ class CarControllerParams:
 
 # Steer torque limits
 class SteerLimitParams:
-  STEER_MAX = 550   # 550 is the max, 255 is stock
-  STEER_DELTA_UP = 3 
-  STEER_DELTA_DOWN = 6 
+  STEER_MAX = 455  
+  STEER_DELTA_UP = 4 
+  STEER_DELTA_DOWN = 7 
   STEER_DRIVER_ALLOWANCE = 50
   STEER_DRIVER_MULTIPLIER = 2
   STEER_DRIVER_FACTOR = 1
