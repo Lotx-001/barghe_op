@@ -21,17 +21,17 @@ min_set_speed = 30 * CV.KPH_TO_MS
 class CarControllerParams:
   ACCEL_HYST_GAP = 0.02  # don't change accel command for small oscilalitons within this value
   ACCEL_MAX = 1.5  # 1.5 m/s2
-  ACCEL_MIN = -3  # 3   m/s2
+  ACCEL_MIN = -4  # 4   m/s2
   ACCEL_SCALE = max(ACCEL_MAX, -ACCEL_MIN)
   # SPAS steering limits
   STEER_ANG_MAX = 360  # SPAS Max Angle
-  STEER_ANG_MAX_RATE = 1.5 # SPAS Degrees per ms
+  STEER_ANG_MAX_RATE = 180 # SPAS Degrees per ms
 
 # Steer torque limits
 class SteerLimitParams:
-  STEER_MAX = 255   # 384 is the max, 255 is stock
+  STEER_MAX = 384   # 409 is the max, 255 is stock
   STEER_DELTA_UP = 3 
-  STEER_DELTA_DOWN = 5 
+  STEER_DELTA_DOWN = 6 
   STEER_DRIVER_ALLOWANCE = 50
   STEER_DRIVER_MULTIPLIER = 2
   STEER_DRIVER_FACTOR = 1
