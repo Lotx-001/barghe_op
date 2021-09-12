@@ -469,7 +469,6 @@ FW_VERSIONS = {
     (Ecu.fwdRadar, 0x7d0, None): [ b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400-F6000     \xf1\xa01.01',],
     (Ecu.esp, 0x7d1, None): [b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920-F6230\xf1\xa01.01',],
   },
-
 }
 
 CHECKSUM = {
