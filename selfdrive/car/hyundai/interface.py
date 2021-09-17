@@ -40,7 +40,7 @@ class CarInterface(CarInterfaceBase):
     ret.steerLimitTimer = 0.8
     tire_stiffness_factor = 1.
 
-    ret.maxSteeringAngleDeg = 90.
+    ret.maxSteeringAngleDeg = 120.
     ret.startAccel = 1.0
 
     eps_modified = False
@@ -144,7 +144,7 @@ class CarInterface(CarInterfaceBase):
       tire_stiffness_factor = 0.7
     elif candidate in [CAR.K7, CAR.K7_HEV]:
       tire_stiffness_factor = 0.7
-      ret.mass = 1650. + STD_CARGO_KG
+      ret.mass = 1595. + STD_CARGO_KG
       ret.wheelbase = 2.855
     elif candidate == CAR.SELTOS:
       ret.mass = 1310. + STD_CARGO_KG
