@@ -41,7 +41,7 @@ class CarInterface(CarInterfaceBase):
     tire_stiffness_factor = 1.
 
     ret.maxSteeringAngleDeg = 120.
-    ret.startAccel = 1.0
+    ret.startAccel = 0.8
 
     eps_modified = False
     for fw in car_fw:
