@@ -36,11 +36,11 @@ class CarInterface(CarInterfaceBase):
     ret.communityFeature = True
 
     ret.steerActuatorDelay = 0.1  # Default delay
-    ret.steerRateCost = 0.6
-    ret.steerLimitTimer = 0.9
+    ret.steerRateCost = 0.5
+    ret.steerLimitTimer = 0.8
     tire_stiffness_factor = 1.
 
-    ret.maxSteeringAngleDeg = 120.
+    ret.maxSteeringAngleDeg = 90.
     ret.startAccel = 0.8
 
     eps_modified = False
