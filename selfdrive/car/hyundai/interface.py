@@ -36,8 +36,8 @@ class CarInterface(CarInterfaceBase):
     ret.communityFeature = True
 
     ret.steerActuatorDelay = 0.1  # Default delay
-    ret.steerRateCost = 0.3
-    ret.steerLimitTimer = 0.5
+    ret.steerRateCost = 0.5
+    ret.steerLimitTimer = 0.10
     tire_stiffness_factor = 1.
 
     ret.maxSteeringAngleDeg = 125.
@@ -165,13 +165,13 @@ class CarInterface(CarInterfaceBase):
     ret.lateralTuning.lqr.l = [0.33, 0.318]
 
     ret.steerRatio = 16.5
-    ret.steerActuatorDelay = 0.8
-    ret.steerLimitTimer = 2.5
+    ret.steerActuatorDelay = 0.1
+    ret.steerLimitTimer = 1.6
 
-    ret.steerRateCost = 0.38
+    ret.steerRateCost = 0.5
 
     ret.steerMaxBP = [0.]
-    ret.steerMaxV = [1.0]
+    ret.steerMaxV = [1.3]
 
     if ret.openpilotLongitudinalControl:
 
