@@ -40,7 +40,7 @@ class CarInterface(CarInterfaceBase):
     ret.steerLimitTimer = 0.10
     tire_stiffness_factor = 1.
 
-    ret.maxSteeringAngleDeg = 180.
+    ret.maxSteeringAngleDeg = 360.
     ret.startAccel = 0.5
 
     eps_modified = False
@@ -165,7 +165,7 @@ class CarInterface(CarInterfaceBase):
     ret.lateralTuning.lqr.l = [0.33, 0.318]
 
     ret.steerRatio = 16.5
-    ret.steerActuatorDelay = 0.8
+    ret.steerActuatorDelay = 0.9
     ret.steerLimitTimer = 2.6
 
     ret.steerRateCost = 0.39
