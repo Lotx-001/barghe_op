@@ -464,7 +464,10 @@ FW_VERSIONS = {
     (Ecu.transmission, 0x7e1, None): [b'\xf1\x87CZLUB49370612JF7h\xa8y\x87\x99\xa7hv\x99\x97fv\x88\x87x\x89x\x96O\xff\x88\xff\xff\xff.@\xf1\x816V2C2051\000\000\xf1\0006V2B0_C2\000\0006V2C2051\000\000CSP4N20NS3\000\000\000\000',],
   },
   CAR.K7: {
-    (Ecu.eps, 0x7d4, None): [b'\xf1\000YG  MDPS C 1.00 1.00 99800-F6563\000 4YGAC100',],
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\000YG  MDPS C 1.00 1.00 99800-F6563\000 4YGAC100',
+      b'\xf1\000YG  MDPS C 1.01 99500-F6563\000 4YGDC103',
+    ],
     (Ecu.fwdCamera, 0x7c4, None): [b'\xf1\000IG MFC  1.00 1.00 95740-F9200 180915',],
     (Ecu.fwdRadar, 0x7d0, None): [ b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400-F6000     \xf1\xa01.01',],
     (Ecu.esp, 0x7d1, None): [b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920-F6230\xf1\xa01.01',],
