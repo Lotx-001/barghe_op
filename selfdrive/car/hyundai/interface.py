@@ -36,8 +36,8 @@ class CarInterface(CarInterfaceBase):
     ret.communityFeature = True
 
     ret.steerActuatorDelay = 0.1  # Default delay
-    ret.steerRateCost = 0.3
-    ret.steerLimitTimer = 0.10
+    ret.steerRateCost = 0.4
+    ret.steerLimitTimer = 0.8
     tire_stiffness_factor = 1.
 
     ret.maxSteeringAngleDeg = 360.
@@ -143,14 +143,12 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.7
       tire_stiffness_factor = 0.7
     elif candidate in [CAR.K7, CAR.K7_HEV]:
-      tire_stiffness_factor = 0.7
-      ret.mass = 1650. + STD_CARGO_KG
-      ret.wheelbase = 2.855
-      ret.centerToFront = ret.wheelbase * 0.4
-    elif candidate == CAR.SELTOS:
-      ret.mass = 1310. + STD_CARGO_KG
-      ret.wheelbase = 2.6
-      tire_stiffness_factor = 0.7
+      ret.mass = 1575. + STD_CARGO_KG
+      ret.wheelbase = 2.85
+      ret.steerRatio = 12.5
+      ret.lateralTuning.pid.kf = 0.00005
+      ret.lateralTuning.pid.kiBP, ret.lateralTuning.pid.kpBP = [[0.], [0.]]
+      ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.25], [0.05]]
 
 
     ret.lateralTuning.init('lqr')
